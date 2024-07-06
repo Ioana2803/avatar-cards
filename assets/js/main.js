@@ -23,11 +23,11 @@ console.log(player);
 console.log('');
 
 const healthBarModel = new ProgressBarModel('Health', player.stats.health.max, player.stats.health.current);
-const healthBarView = new ProgressBarView(healthBarModel);
+const healthBarView = new ProgressBarView(null, healthBarModel);
 
 const energyBarModel = new ProgressBarModel('Energy', player.stats.energy.max, player.stats.energy.current);
-const energyBarView = new ProgressBarView(energyBarModel);
+const energyBarView = new ProgressBarView(null, energyBarModel);
 
 const avatarModel = new AvatarModel(player.name, player.avatar);
-const avatarView = new AvatarView(avatarModel);
+const avatarView = new AvatarView(null, avatarModel);
 

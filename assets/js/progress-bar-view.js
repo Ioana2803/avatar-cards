@@ -1,5 +1,7 @@
 export default class ProgressBarView{
-    constructor(progresBarModel){
+    constructor(parentDOMElement, progresBarModel){
+        this.parentDOMElement = parentDOMElement;
+
         this.progresBarModel = progresBarModel;
         this.init();
         this.update();

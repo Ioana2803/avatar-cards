@@ -1,5 +1,7 @@
 export default class AvatarView{
-    constructor(avatarModel){
+    constructor(parentDOMElement, avatarModel){
+        this.parentDOMElement = parentDOMElement;
+
         this.avatarModel = avatarModel;
         this.init();
         this.update();
