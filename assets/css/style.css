@@ -1,22 +1,43 @@
+:root{
+    --border-radius: 8px;
+}
+
 .player-card
 {
-    border: 1px solid black;
+    width: 20rem;
     padding: 1rem;
+    border: 1px solid lightgrey;
+    border-radius: var(--border-radius);
+    background-color:   rgb(253, 253, 253);
+}
+
+.player-name
+{
+    text-align: center;
 }
 
 .avatar
 {
-    height: 5rem;
+    width: 40%;
     aspect-ratio: 1;
     background-color: rgb(146, 124, 91);
-    border-radius: 50%;
+    border-radius: var(--border-radius);
+    margin: auto;
+    background-image: url('https://api.dicebear.com/9.x/fun-emoji/svg?seed=Kiki');
+    background-size: cover;
+    
 }
 
 .bar
 {
-    height: 1rem;
+    height: 0.75rem;
     border: 1px solid black;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: white;
+}
+
+.bar-fill{
+    height: 100%;
 }
 
 .hp
@@ -24,7 +45,17 @@
     border-color: red;
 }
 
+.hp .bar-fill{
+    background-color: red;
+    width: 35%;
+}
+
 .energy
 {
     border-color: blue;
+}
+
+.energy .bar-fill{
+    background-color: blue;
+    width: 48%;
 }
