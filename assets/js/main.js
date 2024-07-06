@@ -1,9 +1,12 @@
+import AvatarModel from "./avatar-model.js";
+import AvatarView from "./avatar-view.js";
 import ProgressBarModel from "./progress-bar-model.js";
 import ProgressBarView from "./progress-bar-view.js";
 
 
 const player = {
     name: 'Kiki',
+    avatar: 'https://api.dicebear.com/9.x/fun-emoji/svg?seed=Kiki',
     stats: {
         health: {
             max: 120,
@@ -24,4 +27,7 @@ const healthBarView = new ProgressBarView(healthBarModel);
 
 const energyBarModel = new ProgressBarModel('Energy', player.stats.energy.max, player.stats.energy.current);
 const energyBarView = new ProgressBarView(energyBarModel);
+
+const avatarModel = new AvatarModel(player.name, player.avatar);
+const avatarView = new AvatarView(avatarModel);
 

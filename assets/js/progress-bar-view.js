@@ -6,13 +6,13 @@ export default class ProgressBarView{
     }
 
     init(){
-        // TODO: should create the DOM elements
-        console.log('Initialising progress bar DOM elements...');
+        // TODO: should create the PROGRESS BAR DOM elements
+        console.log('Initialising PROGRGESS BAR DOM elements...');
     }
 
     update(){
-        // TODO: should update the new values in the created DOM elements
-        console.log('Rendering the new values');
+        // TODO: should update the PROGRESS BAR new values in the created DOM elements
+        console.log('Rendering the PROGRGESS BAR new values');
         console.log(this.progresBarModel);
     }
 }
