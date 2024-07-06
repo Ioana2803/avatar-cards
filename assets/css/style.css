@@ -1,0 +1,30 @@
+.player-card
+{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.avatar
+{
+    height: 5rem;
+    aspect-ratio: 1;
+    background-color: rgb(146, 124, 91);
+    border-radius: 50%;
+}
+
+.bar
+{
+    height: 1rem;
+    border: 1px solid black;
+    margin-top: 0.5rem;
+}
+
+.hp
+{
+    border-color: red;
+}
+
+.energy
+{
+    border-color: blue;
+}
