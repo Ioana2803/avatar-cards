@@ -1,9 +1,11 @@
-console.log('All set!');
+import ProgressBarModel from "./progress-bar-model.js";
+import ProgressBarView from "./progress-bar-view.js";
+
 
 const player = {
     name: 'Kiki',
     stats: {
-        hp: {
+        health: {
             max: 120,
             current: 33
         },
@@ -14,5 +16,12 @@ const player = {
     }
 }
 
-
 console.log(player);
+console.log('');
+
+const healthBarModel = new ProgressBarModel('Health', player.stats.health.max, player.stats.health.current);
+const healthBarView = new ProgressBarView(healthBarModel);
+
+const energyBarModel = new ProgressBarModel('Energy', player.stats.energy.max, player.stats.energy.current);
+const energyBarView = new ProgressBarView(energyBarModel);
+
