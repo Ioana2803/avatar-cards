@@ -1,6 +1,7 @@
 export default class ProgressBarModel {
-    constructor(statName, maxValue, initialValue){
+    constructor(statName, valueName, maxValue, initialValue){
         this.statName = statName;
+        this.valueName = valueName;
         this.maxValue = maxValue;
         this.currentValue = initialValue;
     }

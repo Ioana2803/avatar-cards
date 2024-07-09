@@ -23,7 +23,7 @@
     background-color: rgb(146, 124, 91);
     border-radius: var(--border-radius);
     margin: auto;
-    background-image: url('https://api.dicebear.com/9.x/fun-emoji/svg?seed=Kiki');
+    /* background-image: url('https://api.dicebear.com/9.x/fun-emoji/svg?seed=Kiki'); */
     background-size: cover;
     
 }
@@ -47,7 +47,7 @@
 
 .hp .bar-fill{
     background-color: red;
-    width: 35%;
+    /* width: 35%; */
 }
 
 .energy
@@ -57,5 +57,5 @@
 
 .energy .bar-fill{
     background-color: blue;
-    width: 48%;
+    /* width: 48%; */
 }
